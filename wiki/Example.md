@@ -1,7 +1,7 @@
 ### Example Model ###
 **Ogre.mdl from [LQ](https://librequake.queer.sh/)**
 
-**Models licence: BSD3**
+**Models licence: [BSD3](../example-mdl/LICENSE)**
 
 **[[Download]](../example-mdl/ogre.mdl.blend.zip)** (click "View raw")
 
