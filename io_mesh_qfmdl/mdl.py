@@ -39,7 +39,7 @@ class MDL:
              'EF_GIB':EF_GIB, 'EF_TRACER':EF_TRACER, 'EF_ZOMGIB':EF_ZOMGIB,
              'EF_TRACER2':EF_TRACER2, 'EF_TRACER3':EF_TRACER3}
 
-    PALETTE = {'PAL_QUAKE': 0, 'PAL_HEXEN2': 1}
+    PALETTE = {'PAL_QUAKE': 0, 'PAL_QUAKE_NF': 1, 'PAL_HEXEN2': 2}
 
     class Skin:
         def __init__(self):

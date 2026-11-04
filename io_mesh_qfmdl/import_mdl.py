@@ -73,8 +73,8 @@ def make_faces(mdl):
 
 def load_skins(mdl):
     def load_skin(skin, name):
-        if mdl.palette == 0:
-            pal = quakepal
+        if mdl.palette != MDL.PALETTE['PAL_HEXEN2']:
+            pal = quakepal   # fullbrights only matter when exporting
         else:
             pal = hexen2pal
         skin.name = name

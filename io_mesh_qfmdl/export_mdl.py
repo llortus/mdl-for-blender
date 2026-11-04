@@ -404,8 +404,6 @@ def export_mdl(
                 mdl = MDL(objects[0].name)
                 mdl.obj = objects[0]
                 firstObj = False
-                if not mdl.skins:
-                    make_skin(operator, mdl, mesh)
             if not get_properties(
                     operator,
                     mdl,
@@ -418,6 +416,9 @@ def export_mdl(
                     xform,
                     md16):
                         return {'CANCELLED'}
+            # After get_properties, so the skin uses the chosen palette.
+            if not mdl.skins:
+                make_skin(operator, mdl, mesh)
     mdl.tris, mdl.stverts, vertmap = build_tris(meshes)
 
     if not mdl.frames:
